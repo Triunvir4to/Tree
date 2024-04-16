@@ -19,6 +19,17 @@ void setNode(Tree *node, int value, Tree *leftNode, Tree *rightNode) {
 void printTree(Tree *tree) {
     if (tree == nullptr)return;
 
-    Stack *
+    Stack *stack = newStack();
+    stackPush(stack, tree);
 
+    while (!stackEmpty(stack)) {
+        Tree *node = stackPop(stack);
+
+        printf("%d\n", node->info);
+
+        if (node->rightNode != nullptr)
+            stackPush(stack, node->rightNode);
+        if (node->leftNode != nullptr)
+            stackPush(stack, node->leftNode);
+    }
 }
