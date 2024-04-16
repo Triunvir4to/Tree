@@ -1,5 +1,7 @@
 #include "Tree.h"
 #include <cstdlib>
+#include <cstdio>
+#include "Stack.h"
 
 Tree *newTree(int value, Tree *leftNode, Tree *rightNode) {
     Tree *newTree = (Tree *) malloc(sizeof(Tree));
@@ -12,4 +14,11 @@ void setNode(Tree *node, int value, Tree *leftNode, Tree *rightNode) {
     node->info = value;
     node->leftNode = leftNode;
     node->rightNode = rightNode;
+}
+
+void printTree(Tree *tree) {
+    if (tree == nullptr)return;
+
+    Stack *
+
 }
