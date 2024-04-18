@@ -10,6 +10,7 @@ Tree *newTree(int value, Tree *leftNode, Tree *rightNode);
 void setNode(Tree *node, int value, Tree *leftNode, Tree *rightNode);
 void treePrint(Tree *tree);
 int treeEquals(Tree *tree1, Tree * tree2);
+Tree *treeCopy(Tree *tree);
 int treeGetNumOfPairValues(Tree *tree);
 int treeGetNumofLeaves(Tree *tree);
 int treeGetNumofOneSonNode(Tree *tree);
