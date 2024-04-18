@@ -4,8 +4,5 @@ project(Tree)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Tree main.cpp
-        Tree.cpp
-        Tree.h
-        LinkedList.h
-        LinkedList.cpp
-        Stack.cpp)
+                LinkedList.h Stack.h Tree.h
+                LinkedList.cpp Stack.cpp Tree.cpp)

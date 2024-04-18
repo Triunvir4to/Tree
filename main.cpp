@@ -13,7 +13,10 @@ int main() {
     a2 = newTree(20, a4, nullptr);
     a1 = newTree(10, a2, a3);
 
-    printTree(a1);
+    printf("pares: %d\n", treeGetNumOfPairValues(a1));
+    printf("Quantidades de folhas: %d\n", treeGetNumofLeaves(a1));
+    printf("Nos com 1 filho: %d\n", treeGetNumofOneSonNode(a1));
+    printf("No 1 igual a no 1: %d\n", treeEquals(a1, a2));
 
     return 0;
 }

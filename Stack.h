@@ -2,6 +2,7 @@
 #define STACK_STACK_H
 
 #include "LinkedList.h"
+#include "Tree.h"
 
 typedef struct stack {
     int n;
